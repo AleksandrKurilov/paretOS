@@ -1,6 +1,6 @@
 import { Auth } from "@aws-amplify/auth";
 import { RestAPI } from "@aws-amplify/api-rest";
-import { v4 as uuidv4 } from "uuid";
+import { nanoid } from "nanoid";
 import { useState } from "react";
 import FormGroup from "react-bootstrap/lib/FormGroup";
 import ControlLabel from "react-bootstrap/lib/ControlLabel";
@@ -62,10 +62,10 @@ const CreateUser = (props) => {
     event.preventDefault();
     props.setLoading();
     // need to auto-generate cognito credentials for the email
-    const productId = uuidv4();
-    const apprenticeshipId = uuidv4();
-    const interviewingId = uuidv4();
-    const beginId = uuidv4();
+    const productId = nanoid();
+    const apprenticeshipId = nanoid();
+    const interviewingId = nanoid();
+    const beginId = nanoid();
     setState((prevState) => ({ ...prevState, isLoading: true }));
     let instructorStatus;
     if (state.type === "mentee") {
