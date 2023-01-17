@@ -23,7 +23,7 @@
     "@sanity/client": "3.4.1",
     "@sanity/image-url": "1.0.1",
     "@sentry/react": "7.16.0",
-    "@sentry/tracing": "7.16.0",
+    "@sentry/tracing": "7.31.0",
     "@stripe/stripe-js": "1.42.0",
     "@testing-library/react": "13.4.0",
     "@types/pell": "1.0.1",
